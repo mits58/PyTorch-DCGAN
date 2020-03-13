@@ -1,2 +1,23 @@
-# PyTorch-DCGAN
-An implementation of DCGAN
+# What's this?
+DCGAN（Deep Convolution Generative Adversarial Network）のPyTorchによる実装。
+
+MNISTデータを用い、手書き文字の生成を行っています。
+
+
+# GANとは？
+- Generator（生成器）
+- Discriminator（識別器）
+
+の2つからなるNN系の生成モデル。
+偽札を作る人、警察とそれぞれ擬えられることが多い。
+
+## Generatorってなんなのさ
+- 考えられるすべての画像パターンのうち、人間が見て○○だ！と思える画像パターンを生成する
+- 同じ画像を生成してしまうのはよくないので、入力として乱数とる
+- 教師データとして、「○○に見える画像」を取る。そこから、○○の特徴を捉えていくことで生成
+
+キーとなるユニットとして、 転置畳み込み（`nn.ConvTranspose2d()`）がある。
+普通の畳込みと逆のような操作を行っている。どちらもカーネルを使い、入力データのセルを見ていく。
+カーネル単位で見ていくのが普通の畳込み。セル単位で見ていくのが転置畳込み。
+
+## Discriminatorってなんなのさ
