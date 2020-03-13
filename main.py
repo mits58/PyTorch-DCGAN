@@ -213,7 +213,7 @@ if __name__ == '__main__':
     G.eval()
     fake_images = G(input_z.to(device))
 
-    fig = plt.figure((15, 6))
+    fig = plt.figure(figsize=(15, 6))
     for i in range(0, 5):
         plt.subplot(1, 5, i+1)
         plt.imshow(fake_images[i][0].cpu().detach().numpy(), 'gray')
