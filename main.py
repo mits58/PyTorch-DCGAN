@@ -217,3 +217,5 @@ if __name__ == '__main__':
     for i in range(0, 5):
         plt.subplot(1, 5, i+1)
         plt.imshow(fake_images[i][0].cpu().detach().numpy(), 'gray')
+
+    plt.savefig('visualization.png')
