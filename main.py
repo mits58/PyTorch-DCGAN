@@ -59,7 +59,7 @@ class GAN_Img_Dataset(data.Dataset):
 
         return img_transformed
 
-def main():
+def make_data():
     data_dir = "./data/"
     if not os.path.exists(data_dir):
         os.mkdir(data_dir)
