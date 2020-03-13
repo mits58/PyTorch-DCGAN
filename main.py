@@ -103,7 +103,7 @@ if __name__ == '__main__':
     # データセットの準備
     make_data()
     train_img_list = make_datapath_list()
-    mean, std = (0.5, ), (0.5, 0)
+    mean, std = (0.5, ), (0.5, )
     train_dataset = GAN_Img_Dataset(train_img_list, ImageTransform(mean, std))
     batch_size = 64
     train_dataloader = data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
