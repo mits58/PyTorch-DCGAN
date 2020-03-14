@@ -1,8 +1,12 @@
 # What's this?
 DCGAN（Deep Convolution Generative Adversarial Network）のPyTorchによる実装。
-
 MNISTデータを用い、手書き文字の生成を行っています。
 
+
+# 結果
+7と8の画像を用い生成を行った。7のほうが騙すのが簡単なため、7の画像のみ生成されるモード崩壊が起きていることがわかる。
+
+![結果](./visualization.png)
 
 # GANとは？
 - Generator（生成器）
@@ -72,10 +76,9 @@ MNISTデータを用い、手書き文字の生成を行っています。
   - で初期化
 
 
-# わからなかった部分
-- 偽の画像について、DiscriminatorとGeneratorで別のものを用いていたが、それで良いのだろうか？
-
+# 実装でふわふわしていた部分
+- 偽の画像について、DiscriminatorとGeneratorで別のものを用いていたが、それで良い？
 
 
 ### 参考書籍
-- ほげ
+- 「つくりながら学ぶ! PyTorchによる発展ディープラーニング」（小川雄太郎, マイナビ出版, 2019)
