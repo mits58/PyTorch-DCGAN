@@ -80,5 +80,6 @@ MNISTデータを用い、手書き文字の生成を行っています。
 - 偽の画像について、DiscriminatorとGeneratorで別のものを用いていたが、それで良い？
 
 
-### 参考書籍
+### Reference
+- [Radford+, Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
 - 「つくりながら学ぶ! PyTorchによる発展ディープラーニング」（小川雄太郎, マイナビ出版, 2019)
